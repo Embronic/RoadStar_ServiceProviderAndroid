@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorwhite"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/screen_toolbar"
+                layout="@layout/global_toolbar" />
+
+            <include
+                android:id="@+id/screen_banner_view"
+                layout="@layout/global_banner_view" />
+
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_weight="0.5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <include
+                    android:id="@+id/signIn_btn"
+                    layout="@layout/action_white_strock_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:title="@{@string/signin}" />
+
+                <include
+                    android:id="@+id/register_btn"
+                    layout="@layout/action_red_gradient_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/signIn_btn"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:title="@{@string/register}" />
+
+                <com.roadstar_serviceprovider.utils.Road_Lable
+                    style="@style/regular_black_16_text"
+                    android:layout_below="@+id/register_btn"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:text="@string/welcome_screen_msg"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/_16sdp" />
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

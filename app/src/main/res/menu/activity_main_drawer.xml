@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/navigation_manage_vehicle"
+            android:icon="@drawable/vehicle_type_car"
+            android:title="@string/manage_vehicle" />
+
+
+        <item
+            android:id="@+id/navigation_documents"
+            android:icon="@drawable/document"
+            android:title="@string/document" />
+
+        <item
+            android:id="@+id/navigation_history"
+            android:icon="@drawable/booking_histort"
+            android:title="@string/history" />
+
+
+        <item
+            android:id="@+id/navigation_earning"
+            android:icon="@drawable/claim"
+            android:title="@string/earning" />
+
+        <item
+            android:id="@+id/navigation_payment_method"
+            android:icon="@drawable/card"
+            android:title="@string/payment_method" />
+
+        <item
+            android:id="@+id/navigation_support"
+            android:icon="@drawable/support"
+            android:title="@string/suppport" />
+
+        <item
+            android:id="@+id/navigation_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>
