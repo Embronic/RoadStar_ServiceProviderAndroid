@@ -15,8 +15,7 @@
         android:elevation="@dimen/dp_1"
         app:cardCornerRadius="@dimen/_4sdp"
         app:cardUseCompatPadding="true"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
 
         <LinearLayout
@@ -110,7 +109,6 @@
                 </LinearLayout>
 
             </LinearLayout>
-
 
         </LinearLayout>
 

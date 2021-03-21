@@ -12,6 +12,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import static com.roadstar_serviceprovider.utils.Constants.SELECT_CAMERA;
+import static com.roadstar_serviceprovider.utils.Constants.SELECT_GALLERY;
 import static com.roadstar_serviceprovider.utils.Constants.mCamRequestedUri;
 
 public class GeneralUtils {
@@ -26,10 +28,10 @@ public class GeneralUtils {
                 (dialog, which) -> {
                     switch (which) {
                         case 0:
-                            chooseCamera(context, 100);
+                            chooseCamera(context, SELECT_CAMERA);
                             break;
                         case 1:
-                            chooseGallery(context, 200);
+                            chooseGallery(context, SELECT_GALLERY);
                             break;
                     }
                 });

@@ -41,7 +41,7 @@
 
 
                 <include
-                    android:id="@+id/register_user_btn"
+                    android:id="@+id/register_company_btn"
                     layout="@layout/action_white_strock_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

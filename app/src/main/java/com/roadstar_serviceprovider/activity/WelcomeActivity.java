@@ -51,7 +51,7 @@ public class WelcomeActivity extends BaseActivity {
         super.onClick(v);
         switch (v.getId()) {
             case R.id.register_btn:
-                SelectUserActivity.startActivity(mThis);
+                RegisterActivity.startActivity(mThis);
                 break;
             case R.id.signIn_btn:
                 SignInActivity.startActivity(mThis);

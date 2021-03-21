@@ -4,6 +4,11 @@
     package="com.roadstar_serviceprovider">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name=".app.AppController"
@@ -17,10 +22,48 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="HardcodedDebugMode">
-        <activity android:name=".activity.RegisterCompanyActivity"></activity>
-        <activity android:name=".activity.LiveTrackingActivity" />
-        <activity android:name=".activity.RegisterProviderActivity" />
-        <activity android:name=".activity.RequestDetailsActivity" />
+        <activity
+            android:name=".activity.UpdatePasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity"></activity>
+        <activity
+            android:name=".activity.ForgotPasswordOTPActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.RegisterCompanyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.LiveTrackingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.RegisterDriverActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.RequestDetailsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".activity.RequestActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
@@ -85,7 +128,7 @@
             android:theme="@style/AppTheme"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".activity.RegisterDriverActivity"
+            android:name=".activity.RegisterProviderActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
             android:resizeableActivity="false"
             android:screenOrientation="portrait"

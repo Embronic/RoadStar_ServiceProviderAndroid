@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
@@ -66,7 +66,6 @@
                                 app:ccp_autoDetectLanguage="true"
                                 app:ccp_contentColor="@color/colorblack"
                                 app:ccp_countryPreference="US"
-                                app:ccp_defaultPhoneCode="1"
                                 app:ccp_rememberLastSelection="false"
                                 app:ccp_showArrow="false"
                                 app:ccp_showFlag="true"
@@ -103,12 +102,13 @@
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_weight="0.5">
 
-
-                    <com.roadstar_serviceprovider.utils.Road_Lable
-                        style="@style/regular_black_14_text"
-                        android:layout_centerInParent="true"
-                        android:text="9347868600"
-                        android:textColor="@color/colorblack" />
+                    <EditText
+                        android:id="@+id/et_mobile"
+                        style="@style/edittext_style_new"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        tools:text="99999999"
+                        android:background="@android:color/transparent"/>
 
                 </RelativeLayout>
 

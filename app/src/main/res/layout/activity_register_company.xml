@@ -25,7 +25,7 @@
         </LinearLayout>
 
 
-        <ScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_0"
             android:layout_weight="0.6">
@@ -55,19 +55,55 @@
 
                         <com.roadstar_serviceprovider.utils.Road_Lable
                             style="@style/medium_black_14_text"
-                            android:text="@string/please_enter_details"
+                            android:text="@string/please_enter_company_details"
                             android:textSize="@dimen/text_16" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+                            <com.roadstar_serviceprovider.utils.Road_Lable
+                                style="@style/regular_black_14_text"
+                                android:text="@string/company_name"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorLabel" />
+
+                            <EditText
+                                android:id="@+id/et_company_name"
+                                style="@style/edittext_style" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:orientation="vertical">
+
+                            <com.roadstar_serviceprovider.utils.Road_Lable
+                                style="@style/regular_black_14_text"
+                                android:text="@string/company_reg_no"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorLabel" />
+
+                            <EditText
+                                android:id="@+id/et_compnay_registration_no"
+                                style="@style/edittext_style" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <com.roadstar_serviceprovider.utils.Road_Lable
                                 style="@style/regular_black_14_text"
                                 android:layout_marginTop="@dimen/_20sdp"
-                                android:text="@string/company_type"
+                                android:text="@string/total_vehicle_no"
                                 android:textAllCaps="true"
                                 android:textColor="@color/colorLabel" />
 
@@ -81,197 +117,249 @@
                                 android:spinnerMode="dropdown" />
                         </LinearLayout>
 
-                        <com.roadstar_serviceprovider.utils.Road_Lable
-                            style="@style/regular_black_14_text"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:text="@string/company_name"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorLabel" />
-
-                        <EditText style="@style/edittext_style" />
-
-
-                        <com.roadstar_serviceprovider.utils.Road_Lable
-                            style="@style/regular_black_14_text"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:text="Company registeration number"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorLabel" />
-
-                        <EditText style="@style/edittext_style" />
-
-
-                        <com.roadstar_serviceprovider.utils.Road_Lable
-                            style="@style/regular_black_14_text"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:text="Company Address"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorLabel" />
-
-                        <EditText style="@style/edittext_style" />
-
-
-
-                        <com.roadstar_serviceprovider.utils.Road_Lable
-                            style="@style/regular_black_14_text"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:text="Company Email"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorLabel" />
-
-                        <EditText style="@style/edittext_style"
-                            android:inputType="textEmailAddress"/>
-
-
-
-                        <com.roadstar_serviceprovider.utils.Road_Lable
-                            style="@style/regular_black_14_text"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:text="Company Phone no."
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorLabel" />
-
-                        <EditText style="@style/edittext_style"
-                            android:inputType="phone"/>
-
-
-
-                        <com.roadstar_serviceprovider.utils.Road_Lable
-                            style="@style/regular_black_14_text"
-                            android:layout_marginTop="@dimen/_20sdp"
-                            android:text="Total number of vehicle"
-                            android:textAllCaps="true"
-                            android:textColor="@color/colorLabel" />
-
-                        <EditText style="@style/edittext_style" />
-
-
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_20sdp">
+                            android:orientation="vertical">
 
                             <com.roadstar_serviceprovider.utils.Road_Lable
                                 style="@style/regular_black_14_text"
-                                android:layout_alignParentLeft="true"
-                                android:text="Government issuer Id"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:text="@string/state"
                                 android:textAllCaps="true"
                                 android:textColor="@color/colorLabel" />
 
-                            <ImageView
-                                android:layout_width="@dimen/_16sdp"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/attach"
-                                android:tint="@color/colorLabel" />
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/state_spinner"
+                                style="@style/spinner_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-8dp"
+                                android:paddingStart="@dimen/dp_0"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
 
-                        </RelativeLayout>
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_20sdp">
+                            android:orientation="vertical">
 
                             <com.roadstar_serviceprovider.utils.Road_Lable
                                 style="@style/regular_black_14_text"
-                                android:layout_alignParentLeft="true"
-                                android:text="Copy of contract with shipping company (If any)"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:text="@string/city"
                                 android:textAllCaps="true"
                                 android:textColor="@color/colorLabel" />
 
-                            <ImageView
-                                android:layout_width="@dimen/_16sdp"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/attach"
-                                android:tint="@color/colorLabel" />
+                            <androidx.appcompat.widget.AppCompatSpinner
+                                android:id="@+id/city_spinner"
+                                style="@style/spinner_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-8dp"
+                                android:paddingStart="@dimen/dp_0"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout >
 
-                        </RelativeLayout>
+                        <com.roadstar_serviceprovider.utils.Road_Lable
+                            style="@style/regular_black_14_text"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/email"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorLabel" />
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
+                        <EditText
+                            android:id="@+id/et_email"
+                            style="@style/edittext_style"
+                            android:layout_marginTop="@dimen/_5sdp" />
+
+
+                        <com.roadstar_serviceprovider.utils.Road_Lable
+                            style="@style/regular_black_14_text"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="@string/mobile"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorLabel" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp">
+                            android:orientation="horizontal"
+                            android:weightSum="2">
 
-                            <com.roadstar_serviceprovider.utils.Road_Lable
-                                style="@style/regular_black_14_text"
-                                android:layout_alignParentLeft="true"
-                                android:text="@string/upload_licence"
-                                android:textAllCaps="true"
-                                android:textColor="@color/colorLabel" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edi_text_background_bottom_line"
+                                android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="@dimen/_16sdp"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/attach"
-                                android:tint="@color/colorLabel" />
+                                <LinearLayout
+                                    android:id="@+id/viewCountryPicker"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
 
-                        </RelativeLayout>
+                                    <ImageView
+                                        android:layout_width="@dimen/_25sdp"
+                                        android:layout_height="@dimen/_18sdp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_2sdp"
+                                        android:src="@drawable/marker_red" />
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
+                                    <com.hbb20.CountryCodePicker
+                                        android:id="@+id/countryPicker"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="start|center_vertical"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start"
+                                        android:layoutDirection="ltr"
+                                        app:ccpDialog_textColor="@color/colorblack"
+                                        app:ccp_autoDetectCountry="false"
+                                        app:ccp_autoDetectLanguage="true"
+                                        app:ccp_contentColor="@color/colorblack"
+                                        app:ccp_countryPreference="US"
+                                        app:ccp_rememberLastSelection="false"
+                                        app:ccp_showArrow="false"
+                                        app:ccp_showFlag="true"
+                                        app:ccp_showNameCode="false"
+                                        app:ccp_showPhoneCode="true"
+                                        app:ccp_textGravity="LEFT"
+                                        app:ccp_textSize="@dimen/text_15" />
+
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:src="@drawable/ic_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/et_mobile"
+                                    style="@style/edittext_style"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.roadstar_serviceprovider.utils.Road_Lable
+                            style="@style/regular_black_14_text"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="@string/address"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorLabel" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp">
+                            android:orientation="horizontal"
+                            android:weightSum="2">
 
-                            <com.roadstar_serviceprovider.utils.Road_Lable
-                                style="@style/regular_black_14_text"
-                                android:layout_alignParentLeft="true"
-                                android:text="@string/upload_licence_req_no"
-                                android:textAllCaps="true"
-                                android:textColor="@color/colorLabel" />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edi_text_background_bottom_line"
+                                android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="@dimen/_16sdp"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/attach"
-                                android:tint="@color/colorLabel" />
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal">
 
-                        </RelativeLayout>
+                                    <com.hbb20.CountryCodePicker
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="start|center_vertical"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="start"
+                                        android:layoutDirection="ltr"
+                                        app:ccpDialog_showNameCode="true"
+                                        app:ccpDialog_textColor="@color/colorblack"
+                                        app:ccp_autoDetectCountry="false"
+                                        app:ccp_autoDetectLanguage="true"
+                                        app:ccp_contentColor="@color/colorblack"
+                                        app:ccp_countryPreference="IN"
+                                        app:ccp_defaultPhoneCode="91"
+                                        app:ccp_rememberLastSelection="false"
+                                        app:ccp_showArrow="false"
+                                        app:ccp_showFlag="false"
+                                        app:ccp_showFullName="true"
+                                        app:ccp_showPhoneCode="false"
+                                        app:ccp_textGravity="LEFT"
+                                        app:ccp_textSize="@dimen/text_15" />
 
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="@dimen/_5sdp"
+                                        android:src="@drawable/ic_arrow_down_24" />
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/et_address"
+                                    style="@style/edittext_style"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <com.roadstar_serviceprovider.utils.Road_Lable
+                            style="@style/regular_black_14_text"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:text="@string/password"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorLabel" />
+
+                        <EditText
+                            android:id="@+id/et_password"
+                            style="@style/edittext_style"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:inputType="textPassword" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/document_rv"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp">
-
-                            <com.roadstar_serviceprovider.utils.Road_Lable
-                                style="@style/regular_black_14_text"
-                                android:layout_alignParentLeft="true"
-                                android:text="@string/upload_insurance"
-                                android:textAllCaps="true"
-                                android:textColor="@color/colorLabel" />
-
-                            <ImageView
-                                android:layout_width="@dimen/_16sdp"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/attach"
-                                android:tint="@color/colorLabel" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_10sdp">
-
-                            <com.roadstar_serviceprovider.utils.Road_Lable
-                                style="@style/regular_black_14_text"
-                                android:layout_alignParentLeft="true"
-                                android:text="@string/upload_residence_proof"
-                                android:textAllCaps="true"
-                                android:textColor="@color/colorLabel" />
-
-                            <ImageView
-                                android:layout_width="@dimen/_16sdp"
-                                android:layout_height="@dimen/_16sdp"
-                                android:layout_alignParentRight="true"
-                                android:background="@drawable/attach"
-                                android:tint="@color/colorLabel" />
-
-                        </RelativeLayout>
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@color/colorwhite"
+                            android:clipToPadding="false" />
 
 
                     </LinearLayout>
@@ -313,6 +401,6 @@
 
             </LinearLayout>
 
-        </ScrollView>
+        </androidx.core.widget.NestedScrollView>
     </LinearLayout>
 </layout>

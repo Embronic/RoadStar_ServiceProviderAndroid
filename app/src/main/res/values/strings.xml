@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RoadStar Provider</string>
+    <string name="app_name">RoadStar</string>
 
     <!--Dialog-->
     <string name="press_back_button_to_exit">Press back again to exit</string>
@@ -14,6 +14,9 @@
     <string name="alphabets">aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUv VwWxXyYzZ</string>
     <string name="alphabets_withoutSpacing">aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ</string>
     <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="allow_permissions">Please allow permissions to proceed</string>
+    <string name="need_permission">Need Permission!</string>
+    <string name="setting">Setting</string>
 
     <!--default-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -33,6 +36,7 @@
     <string name="resend_code">Resend Code</string>
     <string name="next">Next</string>
     <string name="submit">Submit</string>
+    <string name="update">Update</string>
 
 
     <!--Menu-->
@@ -49,6 +53,9 @@
     <!--Register-->
     <string name="mobile">Mobile</string>
     <string name="or_lbl">Or</string>
+    <string name="error_invalid_mobile">Please enter a valid mobile number</string>
+    <string name="error_blank_mobile">Please enter the mobile number</string>
+    <string name="no_internet_error_msg">There might be a problem in the network connection</string>
 
 
     <!--RegisterOne-->
@@ -211,6 +218,7 @@
     <!--Change Password Activity-->
     <string name="old_password">Old Password</string>
     <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
     <string name="save">Save</string>
 
     <!--Claim Fragment-->
@@ -237,7 +245,7 @@
     <!--Select UserActivity-->
     <string name="register_as_company">Register as a company</string>
     <string name="register_as_driver">Register as a driver</string>
-    <string name="register_as_provider">Register as a Traveler</string>
+    <string name="register_as_provider">Register as a provider</string>
 
     <!--Earning-->
     <string name="earning_amount">Earning Amount</string>
@@ -268,6 +276,7 @@
     <string name="vehicle_name">Vehicle Name</string>
     <string name="vehicle_color">Vehicle Color</string>
     <string name="vehicle_type">Vehicle Type</string>
+    <string name="load_size">Load Size</string>
 
     <string name="upload_vehicle_image">upload Vehicle Image</string>
     <string name="upload_licence">Upload Licence</string>
@@ -277,9 +286,33 @@
     <string name="total_no_of_vehicles">Total Number Of Vehicles</string>
 
 
-    <!--company resgisteration-->
-    <string name="company_type">Company Type</string>
+    <!--Company Activity-->
+    <string name="please_enter_company_details">Please enter the company details</string>
     <string name="company_name">Company Name</string>
+    <string name="company_reg_no">Company registration number</string>
+    <string name="total_vehicle_no">Total number of vehicles</string>
+    <string name="service_type">Service Type</string>
+    <string name="service_medium">Service Medium</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+
+    <string name="server_error">There was a problem connecting to the server. Please try again later.</string>
+    <string name="error_blank_OTP">Please enter 4 digit OTP</string>
+
+    <string name="error_blank_company_name">Please enter the company name</string>
+    <string name="error_blank_company_req_no">Please enter the company Registration number</string>
+    <string name="error_blank_email">Please enter the email address</string>
+    <string name="error_blank_address">Please enter the address</string>
+    <string name="error_blank_password">Please enter the password</string>
+    <string name="error_password_not_match">Password do not match</string>
+    <string name="error_document">Please select all the document</string>
+    <string name="error_first_name">Please enter the first name</string>
+    <string name="error_last_name">Please enter the last name</string>
+
+    <string name="error_practical_details">Please enter the practical details</string>
+    <string name="error_size_may_transport">Please enter the Size you may transport</string>
+    <string name="error_depart">Please enter the Departure From</string>
+    <string name="error_arrive">Please enter the Arrival To</string>
 
 
 </resources>

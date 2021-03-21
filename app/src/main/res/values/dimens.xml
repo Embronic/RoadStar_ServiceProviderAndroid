@@ -1,5 +1,6 @@
 <resources>
 
+    <integer name="max_image_size">2000</integer>
     <dimen name="dp_0">0dp</dimen>
     <dimen name="dp_0_5">0.5dp</dimen>
     <dimen name="dp_1">1dp</dimen>

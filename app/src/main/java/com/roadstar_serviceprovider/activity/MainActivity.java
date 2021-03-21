@@ -189,6 +189,8 @@ public class MainActivity extends BaseActivity implements DialogCallback {
     @Override
     public void okPressed() {
         closeDrawer();
+        SignInActivity.startActivity(MainActivity.this);
+        finish();
     }
 
     @Override
